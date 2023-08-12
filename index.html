@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FakeLoginPanel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conectado hidden">
+      <!-- <div class="conectado"> -->
+      <nav class="navbar fixed-top bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- https://www.pngwing.com -->
+          <a class="navbar-brand" href="index.php">
+            <img
+              src="./img/admin.png"
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+            />
+          </a>
+          <h5>Control de usuarios</h5>
+          <br>
+          <h3 class="ms-auto" id="nombreUsuario">Usuario</h3>
+          <button class="btn btn-close" id="salir" onclick="logout()"></button>
+        </div>
+      </nav>
+    </div>
+    <div class="login">
+      <form>
+        <div class="mb-3">
+          <label for="user" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="user" required />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password" required />
+        </div>
+      </form>
+      <button class="btn btn-primary" id="entrar" onclick="login()">
+        Entrar
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
