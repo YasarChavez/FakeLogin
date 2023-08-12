@@ -1,11 +1,20 @@
 body{
     margin: 20px 20px;
 }
-.login{
+#nombreUsuario{
+    margin-right: 1.5rem;
+}
+.login,.usuarios{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.login{
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px #000;
 }
 
 .hidden{
